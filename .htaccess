@@ -1,0 +1,41 @@
+ErrorDocument 404 /404/
+ErrorDocument 403 /403/
+Options -Indexes
+<Files AppConfig.php>
+  Order Deny,Allow
+  Deny from all
+</Files>
+<Files Controllers.php>
+  Order Deny,Allow
+  Deny from all
+</Files>
+<Files Framework.php>
+  Order Deny,Allow
+  Deny from all
+</Files>
+<Files Functions.php>
+  Order Deny,Allow
+  Deny from all
+</Files>
+<Files Middlewares.php>
+  Order Deny,Allow
+  Deny from all
+</Files>
+<Files Packages.php>
+  Order Deny,Allow
+  Deny from all
+</Files>
+<Files Router.php>
+  Order Deny,Allow
+  Deny from all
+</Files>
+<Files Routes.php>
+  Order Deny,Allow
+  Deny from all
+</Files>
+
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-l
+RewriteRule ^(.*)$ index.php/$1

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "whichbrowser/parser": "^2.0",
+        "ezyang/htmlpurifier": "^4.12"
+    }
+}

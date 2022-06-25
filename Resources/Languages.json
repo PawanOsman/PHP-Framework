@@ -1,0 +1,14 @@
+{
+  "english": {
+    "NAME": "English",
+    "DIRECTION": "LTR"
+  },
+  "kurdish": {
+    "NAME": "کوردی",
+    "DIRECTION": "RTL"
+  },
+  "arabic": {
+    "NAME": "العربية",
+    "DIRECTION": "RTL"
+  }
+}
